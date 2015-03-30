@@ -7,14 +7,21 @@ package model;
 
 /**
  *
- * @author Tung
+ * @author DELL
  */
-public class product {
+public class Product {
+
     private int id;
     private String name;
     private float price;
 
-    product() {
+    public Product(int i, String n, float p) {
+        this.id = i;
+        this.name = n;
+        this.price = p;
+    }
+
+    Product() {        
     }
 
     public int getId() {
@@ -38,12 +45,6 @@ public class product {
     }
 
     public void setPrice(float price) {
-        this.price = price;
-    }
-
-    public product(int id, String name, float price) {
-        this.id = id;
-        this.name = name;
         this.price = price;
     }
 
